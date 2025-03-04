@@ -1,1 +1,14 @@
+// use ternary representation approach, jaise hi 2 aa jaaaye to return false, jaise hm binary nikalte hai, same aise hi ternary bhi nikalni hai, last mein return true
+// TC = O of log base 3 n = O(log3n)
 
+class Solution {
+    public boolean checkPowersOfThree(int n) {
+        while(n>0){
+            if(n%3 == 2){
+                return false;
+            }
+            n=n/3;
+        }
+        return true;
+    }
+}
